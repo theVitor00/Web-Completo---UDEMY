@@ -8,3 +8,7 @@ console.log(typeof 31);
 console.log(typeof salario); // Javascript não faz distinção entre tipos numéricos (int e float)
 console.log(typeof estaChovendo);
 console.log(typeof texto);
+
+// "typeof" -> exibe o tipo de dado da variável ou literal associada
+// ex:
+// console.log(typeof variavel);
