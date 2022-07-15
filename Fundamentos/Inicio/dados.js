@@ -9,3 +9,6 @@ console.log(quantidade);
 console.log(preco);
 console.log(imposto);
 console.log(precoFinal);
+
+nome = "Caneta BIC";
+console.log(nome)
