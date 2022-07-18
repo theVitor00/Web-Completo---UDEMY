@@ -7,3 +7,5 @@ console.log("Sentença de código"); // isso é uma sentença
     console.log("Mundo!");
     }
 }
+
+// Não é obrigatório usar ponto e vírgula em Javascript, mas optarei por usar para facilitar a leitura
