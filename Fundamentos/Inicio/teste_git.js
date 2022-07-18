@@ -1,0 +1,1 @@
+console.log("Esse arquivo tem como único objetivco testar o GitHub no Linux Ubuntu");
