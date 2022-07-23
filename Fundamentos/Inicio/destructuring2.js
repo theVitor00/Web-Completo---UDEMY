@@ -1,3 +1,4 @@
+//Desctructuring em uma Array
 const [a] = [10]
 console.log(a)
 
