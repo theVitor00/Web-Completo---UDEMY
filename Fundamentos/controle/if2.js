@@ -7,8 +7,8 @@ function teste1(num) {
 teste1(6)
 teste1(8)
 
-function teste2(num) {
-    if(num > 7); {
+function teste2(num) {      // Não usar ponto e virgula com as estrutura de controle
+    if(num > 7); {          // Elas indicam sentenças de códigos vazias nesse contexto.
         console.log(num)
     }
 }
