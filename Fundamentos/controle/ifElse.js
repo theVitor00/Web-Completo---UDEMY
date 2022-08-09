@@ -1,0 +1,13 @@
+const imprimirResultado = function(nota){
+    if(nota >= 7){
+        console.log('Aprovado!')
+    } else {
+        console.log('Reprovado!')
+    }
+}
+
+imprimirResultado(8)
+imprimirResultado(4)
+imprimirResultado('Epa!') 
+
+//Cuidado com dados usados nas expressões. O JS é fracamente tipado e pode acontecerErros imperceptíveis
