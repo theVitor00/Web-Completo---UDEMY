@@ -24,4 +24,9 @@ const imprimirResultado = function (nota) {
     }
 }
 
-imprimirResultado(32)
+imprimirResultado(10)
+imprimirResultado(7)
+imprimirResultado(6)
+imprimirResultado(3.5)
+imprimirResultado(11)
+imprimirResultado('Papa')
