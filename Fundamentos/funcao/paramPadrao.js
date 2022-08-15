@@ -1,4 +1,5 @@
 // Estratégia 1 para gerar valor padrão
+// Entenda por Valor Padrão, um valor que a variável irá recber caso receba um valor False ou não receba valor algum
 function soma1 (a, b, c) {
     a = a || 1              // caso a expressão retorne um valor False, ela assume o valor padrão 1
     b = b || 1
