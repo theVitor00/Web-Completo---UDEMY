@@ -1,11 +1,10 @@
-function Pessoa (nome) {
-    this.nome = function () {
-        alguem = this.nome
-        return alguem
+function Pessoa(nome) {
+    this.nome = nome
+
+    this.falar = function () {
+        console.log(`Meu nome é ${this.nome}`)
     }
 }
 
-const a = new Pessoa ()
-a.alguem('Pedro')
-console.log(a)
-
+const p1 = new Pessoa ('João')
+p1.falar()
