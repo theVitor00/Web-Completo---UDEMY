@@ -1,3 +1,4 @@
+// Funções Factory retornam objetos
 // Factory simples
 function criarPessoa () {
     return {
