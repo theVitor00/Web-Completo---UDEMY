@@ -11,4 +11,4 @@ console.log(alunos.map(a => a.bolsista).reduce(todosBolsistas))
 
 // Desafio 2: Algum aluno é bolsita?
 const algumBolsista = (resultado, bolsista) => resultado || bolsista
-console.log(alunos.map(a => a.bolsista))
+console.log(alunos.map(a => a.bolsista).reduce(algumBolsista))
