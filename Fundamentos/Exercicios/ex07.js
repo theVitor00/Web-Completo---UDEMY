@@ -7,20 +7,19 @@ sejam iguais. Caso o Delta seja negativo, retorne ao invés do vetor, uma string
 "Delta é negativo".
 */
 
-const bhaskara = function (a, b, c) {
-    const resultado = []
+const bhaskara = function (a, b, c) {  
     let delta = Math.pow(b, 2) - (4 * a * c)
     if (delta < 0) {
         console.log('Delta é Negativo.')
-    } else if (delta > 0) {
+    } else {
+        const resultado = []
         let x1 = (-b + Math.sqrt(delta)) / (2 * a)
         resultado.push(x1)
         let x2 = (-b - Math.sqrt(delta)) / (2 * a)
         resultado.push(x2)
 
-        console.log(`X\' e X\'\' são ${resultado}`)
+        console.log('Os valores de X\' e X\'\' são respectivamente', resultado)       
     }
-     
 }
 
 bhaskara(1, -14, 49)
