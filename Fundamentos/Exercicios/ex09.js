@@ -12,21 +12,21 @@ const avaliarNota = function (nota) {
     let resultado = ''
     this.nota = nota
     if (nota < 0 || nota > 100) {
-        this.resultado = 'Nota Inválida!'
+        resultado = 'Nota Inválida!'
     } else if (nota < 38) {
-        this.resultado = 'Aluno Reprovado!'
+        resultado = 'Aluno Reprovado!'
     } else if (nota >= 38 && nota < 40) {
-        this.nota = 40
-        this.resultado = 'Aluno Aprovado por aproximação!'
+        nota = 40
+        resultado = 'Aluno Aprovado por aproximação!'
     } else if (nota >= 40) {
         if (nota % 5 < 3) {
-            this.nota = nota - (nota % 5)
+            nota = nota - (nota % 5)
         } else if (nota % 5 > 7) {
-            this.nota = nota + (nota % 5)
+            nota = nota + (nota % 5)
         }
-        this.resultado = 'Aluno Aprovado!' 
+        resultado = 'Aluno Aprovado!' 
     }
-    return `Nota: ${this.nota}, Resultado: ${this.resultado}`
+    return `Nota: ${nota}, Resultado: ${resultado}`
 }
 
-console.log(avaliarNota(88))
+console.log(avaliarNota(52))
