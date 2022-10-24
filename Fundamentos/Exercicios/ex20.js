@@ -6,3 +6,20 @@ informar apenas a seguinte informação (note que não foram exibidas informaç�
 nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1.
 */
 
+const entregarNotas = function (valor) {
+    const notas = [100, 50, 10, 5, 1]
+    let retorno
+
+    for(let i = 0; i < notas.length; i++) {
+        if (valor == notas[i] && valor % notas[i] == 0) {
+            retorno = notas[i]
+        } else if (valor % notas[i] != 0) {
+            while (valor % notas[i] != 0) {
+                
+            }
+        }
+    }
+    return retorno
+}
+
+console.log(entregarNotas(10))
