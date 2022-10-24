@@ -30,4 +30,4 @@ const comprarCarro = function (modelo) {
     return resposta
 }
 
-console.log(comprarCarro('Hatch'))
+console.log(comprarCarro('Caminhao'))
