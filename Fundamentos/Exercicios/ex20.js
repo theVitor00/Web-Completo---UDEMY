@@ -13,7 +13,9 @@ const entregarNotas = function (valor) {
         retorno = `1 nota de R$${valor.toFixed(2)}`
     } else if (valor % 5 != 0 && valor != 1) {
         controle = valor - (valor % 5)
-        retorno = controle
+        if (controle == 1) { 
+            retorno = `1 nota de ${controle.toFixed(2)}`
+        }
     }
     return retorno
 }
