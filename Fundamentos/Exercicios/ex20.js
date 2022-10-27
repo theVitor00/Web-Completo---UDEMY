@@ -7,17 +7,11 @@ nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1.
 */
 
 const entregarNotas = function (valor) {
-    let retorno
-    let controle
-    if (valor % 5 == 0 || valor == 1) {
-        retorno = `1 nota de R$${valor.toFixed(2)}`
-    } else if (valor % 5 != 0 && valor != 1) {
-        controle = valor - (valor % 5)
-        if (controle == 1) { 
-            retorno = `1 nota de ${controle.toFixed(2)}`
-        }
+    let retorno = []
+    for (let i = valor.toString().length - 1; i >= 0; i--) {
+        if (valor.toString(i) > 10)
     }
     return retorno
 }
 
-console.log(entregarNotas(11))
+console.log(entregarNotas(15555551))
