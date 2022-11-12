@@ -18,6 +18,13 @@ const entregarNotas = function (valor) {
         if (total < cedula) {
             console.log(`${notas} notas de R$${cedula}`)
             notas = 0
+            cedula = 50
+        } else if (cedula == 50) {
+            notas = 0
+            cedula = 10
+        } else if (cedula == 5){
+            notas = 0
+            cedula = 1
         }
     }
 }
