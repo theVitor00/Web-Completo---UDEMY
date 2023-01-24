@@ -7,26 +7,6 @@ nota(s) de R$ 10. 1 nota(s) de R$ 5. 3 nota(s) de R$ 1.
 */
 
 const entregarNotas = function (valor) {
-    let total = valor
-    let cedula = 100
-    let notas = 0
-
-    while (total != 0) {
-        total -= cedula
-        notas += 1
-
-        if (total < cedula) {
-            console.log(`${notas} notas de R$${cedula}`)
-            notas = 0
-            cedula = 50
-        } else if (cedula == 50) {
-            notas = 0
-            cedula = 10
-        } else if (cedula == 5){
-            notas = 0
-            cedula = 1
-        }
-    }
+    let notas = (100, 50, 10, 5, 1)
+    
 }
-
-console.log(entregarNotas(345))
